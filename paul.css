@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a;
+}
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 3%;
+    margin-top: 3px;
+    border: 2px solid rgba(0, 136, 169, 1);
+    background-color: black;
+}
+.logo{
+    cursor: pointer;
+    margin: auto;
+}
+.fixed{
+    list-style-type: none;
+}
+.fixed li {
+    display: inline-block;
+    padding: 0px 19.5px;
+    background-color: black;
+}
+.fixed li a{
+    padding: 1px 19px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+.fixed li a:hover{
+    color: #161718;
+}
+button{
+    padding: 8px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+select{
+    background-color: azure;
+}
+.container{
+    position: absolute;
+    width: 1200px;
+    height: 300px;
+    margin: 90px 80px;
+    
+}
+.container .box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: black;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.slideshow-container{
+    position: absolute;
+    width: 1500px;
+    height: 300px;
+    margin: 400px 150px;
+    display: flex;
+    animation-name: slideshower;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    overflow: hidden;
+    
+}
+.slides{
+    width: 700px;
+    margin: 0px 200px;
+    animation-name: slideshower;
+    animation-duration: 200s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes slideshower{
+    0%{
+        left: 0px;
+    }
+    10%{
+        left: -1px;
+    }
+    20%{
+        left: -1200px;
+    }
+    30%{
+        left: -1200px;
+    }
+    40%{
+        left: -2400px;
+    }
+    50%{
+        left: -2400px;
+    }
+    60%{
+        left: -3600px;
+    }
+    70%{
+        left: -3600px;
+    }
+    80%{
+        left: -4800px;
+    }
+    89%{
+        left: -4800px;
+    }
+    94%{
+        left: -6000px;
+    }
+    100%{
+        left: -7000px;
+    }
+}
+.slides img{
+    border: 2px solid rgba(0, 136, 169, 1);
+    border-color: transparent;
+    padding: 50px;
+    margin: 0px 150px 0px 0px;
+    width: 700px;
+    
+}
+.number{
+    position: absolute;
+    padding: 8px 12px;
+    color: lavender;
+    margin: 5px;
+}
+.text{
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    margin: 0px 0px -400px -30px;
+    width: 87%;
+    padding: 8px 16px;
+    background-color: black;
+    bottom: 8px;
+    color: lavender;
+    font-weight: bold;
+}
+span{
+    padding: 1px 20px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+span:hover{
+    color: black;
+}
+.prev{
+    position: absolute;
+    top: 100%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 0px 3px 0px 3px;
+    cursor: pointer;
+}
+.next{
+    position: absolute;
+    top: 100%;
+    right: 150px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 0px 3px 0px 3px;
+    cursor: pointer;
+}
+.next:hover{
+    background: rgba(0, 136, 169, 0.801);
+}
+.prev:hover{
+    background: rgba(0, 136, 169, 0.801);
+}
+.one{
+    position: relative;
+    background: transparent;
+    bottom: 50px;
+    
+}
